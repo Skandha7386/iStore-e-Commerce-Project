@@ -1,0 +1,913 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Clear MagSafe Case",
+      "device": "iPhone",
+      "accessoryType": "Cases & Protection",
+      "category": "Cases",
+      "price": 2499,
+      "description": "Transparent protective case with MagSafe compatibility.",
+      "image": "/Images/clearMagSafe.png",
+      "stock": 30
+    },
+    {
+      "id": "2",
+      "name": "Leather iPhone Case",
+      "device": "iPhone",
+      "accessoryType": "Cases & Protection",
+      "category": "Cases",
+      "price": 3499,
+      "description": "Premium leather-style protective phone case.",
+      "image": "/Images/leatherCase.png",
+      "stock": 15
+    },
+    {
+      "id": "3",
+      "name": "Shockproof Armor Case",
+      "device": "iPhone",
+      "accessoryType": "Cases & Protection",
+      "category": "Cases",
+      "price": 1899,
+      "description": "Heavy-duty case with reinforced corners.",
+      "image": "/Images/shockProofCase.png",
+      "stock": 20
+    },
+    {
+      "id": "4",
+      "name": "Silicone Case - Midnight",
+      "device": "iPhone",
+      "accessoryType": "Cases & Protection",
+      "category": "Cases",
+      "price": 1599,
+      "description": "Soft-touch silicone case in midnight colour.",
+      "image": "/Images/MidNightSilicon.png",
+      "stock": 25
+    },
+    {
+      "id": "5",
+      "name": "MagSafe Charger",
+      "device": "iPhone",
+      "accessoryType": "MagSafe",
+      "category": "Chargers",
+      "price": 4999,
+      "description": "Magnetic wireless charging stand for compatible iPhones.",
+      "image": "/Images/magSafeCharger.png",
+      "stock": 12
+    },
+    {
+      "id": "6",
+      "name": "20W USB-C Power Adapter",
+      "device": "iPhone",
+      "compatibleDevices": [
+        "iPad"
+      ],
+      "accessoryType": "Chargers & Adapters",
+      "category": "Chargers",
+      "price": 1699,
+      "description": "Compact USB-C power adapter.",
+      "image": "Power Adaptor.png",
+      "stock": 36
+    },
+    {
+      "id": "7",
+      "name": "96W Power Adapter",
+      "device": "Mac",
+      "accessoryType": "Chargers & Adapters",
+      "category": "Chargers",
+      "price": 2299,
+      "description": "USB-C fast charging adapter.",
+      "image": "96W Adaptor.png",
+      "stock": 18
+    },
+    {
+      "id": "8",
+      "name": "MagSafe 10000mAh Power Bank",
+      "device": "iPhone",
+      "accessoryType": "MagSafe",
+      "category": "Chargers",
+      "price": 5999,
+      "description": "Portable magnetic wireless power bank.",
+      "image": "PowerBank.png",
+      "stock": 9
+    },
+    {
+      "id": "9",
+      "name": "AirPods 5",
+      "device": "AirPods",
+      "accessoryType": "AirPods",
+      "category": "Audio",
+      "price": 12999,
+      "description": "Wireless earbuds with a compact charging case.",
+      "image": "Airpod5.png",
+      "stock": 13
+    },
+    {
+      "id": "10",
+      "name": "AirPods Max 2",
+      "device": "AirPods",
+      "accessoryType": "Headphones",
+      "category": "Audio",
+      "price": 59999,
+      "description": "Over-ear wireless headphones with noise cancellation.",
+      "image": "Airpods max2.png",
+      "stock": 8
+    },
+    {
+      "id": "11",
+      "name": "Wireless Bluetooth Speaker",
+      "device": "Beats",
+      "accessoryType": "Speakers",
+      "category": "Audio",
+      "price": 3999,
+      "description": "Portable Bluetooth speaker with rich sound.",
+      "image": "wireless speaker.png",
+      "stock": 16
+    },
+    {
+      "id": "12",
+      "name": "Privacy Tempered Glass",
+      "device": "iPhone",
+      "accessoryType": "Cases & Protection",
+      "category": "Screen Protectors",
+      "price": 1299,
+      "description": "Privacy screen protector with scratch resistance.",
+      "image": "tempered glass.png",
+      "stock": 40
+    },
+    {
+      "id": "13",
+      "name": "Camera Lens Protector",
+      "device": "iPhone",
+      "accessoryType": "Cases & Protection",
+      "category": "Screen Protectors",
+      "price": 799,
+      "description": "Protective glass for the rear camera lenses.",
+      "image": "cameraLens.png",
+      "stock": 50
+    },
+    {
+      "id": "14",
+      "name": "Full Coverage Screen Guard",
+      "device": "iPhone",
+      "accessoryType": "Cases & Protection",
+      "category": "Screen Protectors",
+      "price": 999,
+      "description": "Full coverage tempered glass screen protector.",
+      "image": "tempered glass.png",
+      "stock": 45
+    },
+    {
+      "id": "15",
+      "name": "Braided USB-C Cable",
+      "device": "Beats",
+      "accessoryType": "Cables",
+      "category": "Cables",
+      "price": 1299,
+      "description": "Durable braided USB-C charging cable.",
+      "image": "Braided USB-C Cable.png",
+      "stock": 31
+    },
+    {
+      "id": "16",
+      "name": "AirTag 4 pack",
+      "device": "AirTag",
+      "accessoryType": "AirTag",
+      "category": "AirTag",
+      "price": 1799,
+      "description": "Track your everyday essentials with ease using Apple AirTag.",
+      "image": "AirTag.png",
+      "stock": 24
+    },
+    {
+      "id": "17",
+      "name": "Apple Watch Band",
+      "device": "Apple Watch",
+      "accessoryType": "Bands",
+      "category": "Watch Bands",
+      "price": 2999,
+      "description": "Strap accessory for Apple Watch.",
+      "image": "Apple Watch.jpg",
+      "stock": 21
+    },
+    {
+      "id": "18",
+      "name": "AirTag",
+      "device": "AirTag",
+      "accessoryType": "AirTag",
+      "category": "Airtag",
+      "price": 3490,
+      "description": "Small item tracker for keys, bags and belongings.",
+      "image": "AirTag.png",
+      "stock": 18
+    },
+    {
+      "id": "19",
+      "name": "Apple Watch Magnetic Fast Charger",
+      "device": "Apple Watch",
+      "accessoryType": "Chargers & Adapters",
+      "category": "Watch",
+      "price": 9500,
+      "description": "Magnetic charging cable that securely snaps onto your Apple Watch for easy and convenient charging.",
+      "image": "Apple Watch Magnetic Fast Charger.jpg",
+      "stock": 15
+    },
+    {
+      "id": "20",
+      "name": "Magic Keyboard",
+      "device": "Mac",
+      "accessoryType": "Mice & Keyboards",
+      "category": "Mice&Keyboard",
+      "price": 999,
+      "description": "Wireless keyboard with a built-in Touch ID key for Mac.",
+      "image": "MagicKeyboard touchID.jpg",
+      "stock": 28
+    },
+    {
+      "id": "21",
+      "name": "Magic Keyboard",
+      "device": "iPad",
+      "accessoryType": "Keyboards",
+      "category": "Mice&Keyboard",
+      "price": 17500,
+      "description": "Wireless keyboard accessory for iPad.",
+      "image": "Magic keyboard  Touch Id.jpg",
+      "stock": 28
+    },
+    {
+      "id": "22",
+      "name": "Beats Headphones 360",
+      "device": "Beats",
+      "accessoryType": "Headphones",
+      "category": "Audio",
+      "price": 42900,
+      "description": "Beats over-ear headphones.",
+      "image": "Beats headphones 360.jpg",
+      "stock": 0
+    },
+    {
+      "id": "23",
+      "name": "Beats Headphones",
+      "device": "Beats",
+      "accessoryType": "Headphones",
+      "category": "Audio",
+      "price": 6900,
+      "description": "Beats headphones.",
+      "image": "Beats Headphone.jpg",
+      "stock": 0
+    },
+    {
+      "id": "24",
+      "name": "Beats Headphones",
+      "device": "Beats",
+      "accessoryType": "Headphones",
+      "category": "Audio",
+      "price": 22900,
+      "description": "Beats headphones.",
+      "image": "Beats headphones.jpg",
+      "stock": 0
+    },
+    {
+      "id": "25",
+      "name": "Magic Keyboard",
+      "device": "Mac",
+      "accessoryType": "Mice & Keyboards",
+      "category": "Mice&Keyboard",
+      "price": 11900,
+      "description": "Magic Keyboard for Mac.",
+      "image": "Magic Keyboard.jpg",
+      "stock": 0
+    },
+    {
+      "id": "26",
+      "name": "Magic Keyboard with Touch ID",
+      "device": "Mac",
+      "accessoryType": "Mice & Keyboards",
+      "category": "Mice&Keyboard",
+      "price": 19500,
+      "description": "Magic Keyboard with Touch ID for Mac.",
+      "image": "Magic keyboard  Touch Id.jpg",
+      "stock": 0
+    },
+    {
+      "id": "27",
+      "name": "Mouse",
+      "device": "Mac",
+      "accessoryType": "Mice & Keyboards",
+      "category": "Mice&Keyboard",
+      "price": 8900,
+      "description": "Mouse accessory for Mac.",
+      "image": "Mouse.jpg",
+      "stock": 0
+    },
+    {
+      "id": "28",
+      "name": "iPad Pro 11-inch Case",
+      "device": "iPad",
+      "accessoryType": "Cases & Protection",
+      "category": "Cases",
+      "price": 8500,
+      "description": "Protective case for iPad Pro 11-inch.",
+      "image": "Ipad case pro 11.jpg",
+      "stock": 0
+    },
+    {
+      "id": "29",
+      "name": "iPad Pro 13-inch Case",
+      "device": "iPad",
+      "accessoryType": "Cases & Protection",
+      "category": "Cases",
+      "price": 10900,
+      "description": "Protective case for iPad Pro 13-inch.",
+      "image": "iPad case i pad pro 13.jpg",
+      "stock": 0
+    },
+    {
+      "id": "30",
+      "name": "iPad Air 11-inch Case",
+      "device": "iPad",
+      "accessoryType": "Cases & Protection",
+      "category": "Cases",
+      "price": 8500,
+      "description": "Protective case for iPad Air 11-inch.",
+      "image": "iPad case air 11.jpg",
+      "stock": 0
+    },
+    {
+      "id": "31",
+      "name": "iPad A16 Case",
+      "device": "iPad",
+      "accessoryType": "Cases & Protection",
+      "category": "Cases",
+      "price": 8500,
+      "description": "Protective case for iPad A16.",
+      "image": "iPad case A16.jpg",
+      "stock": 0
+    },
+    {
+      "id": "32",
+      "name": "Magnetic Charger for AirPods",
+      "device": "AirPods",
+      "accessoryType": "Chargers & Adapters",
+      "category": "Chargers",
+      "price": 9500,
+      "description": "Magnetic charging accessory.",
+      "image": "Apple Watch Magnetic Fast Charger.jpg",
+      "stock": 16
+    },
+    {
+      "id": "33",
+      "name": "20W USB-C Power Adapter",
+      "device": "AirPods",
+      "accessoryType": "Chargers & Adapters",
+      "category": "Chargers",
+      "price": 1699,
+      "description": "Compact USB-C power adapter.",
+      "image": "Power Adaptor.png",
+      "stock": 35
+    },
+    {
+      "id": "34",
+      "name": "Braided USB-C Charging Cable",
+      "device": "AirPods",
+      "accessoryType": "Chargers & Adapters",
+      "category": "Chargers",
+      "price": 1299,
+      "description": "Braided USB-C charging cable.",
+      "image": "Braided USB-C Cable.png",
+      "stock": 30
+    },
+    {
+      "id": "35",
+      "name": "96W USB-C Power Adapter",
+      "device": "AirPods",
+      "accessoryType": "Chargers & Adapters",
+      "category": "Chargers",
+      "price": 2299,
+      "description": "USB-C power adapter.",
+      "image": "96W Adaptor.png",
+      "stock": 18
+    },
+    {
+      "id": "36",
+      "name": "AirTag Key Ring",
+      "device": "AirTag",
+      "accessoryType": "Key Rings",
+      "category": "Accessories",
+      "price": null,
+      "description": "Key ring accessory for AirTag.",
+      "image": "AirTagKeyring.jpg",
+      "stock": 0
+    }
+  ],
+  "users": [
+    {
+      "name": "skandha",
+      "email": "skandharamaswamy@gmail.com",
+      "username": "skandha",
+      "password": "123456",
+      "id": "0_9UqkQfmtw"
+    },
+    {
+      "name": "Adhil Ahsana",
+      "email": "Adhil@gmail.com",
+      "username": "Adhil Ahsu",
+      "password": "123456",
+      "id": "fHLZ5Ar-kfU"
+    },
+    {
+      "name": "Ashish A Jaison",
+      "email": "Ashish@gmail.com",
+      "username": "Ashish",
+      "password": "123456",
+      "id": "DP23rS_XICA"
+    },
+    {
+      "name": "Adhil",
+      "email": "adhilAhsu@gmail.com",
+      "username": "Adhil",
+      "password": "123456",
+      "id": "wGgcQv71ydY"
+    },
+    {
+      "name": "Nafid",
+      "email": "Nafid@gmail.com",
+      "username": "Nafid",
+      "password": "123456",
+      "id": "ZGO8V-daGlw"
+    },
+    {
+      "name": "Vaishnav",
+      "email": "Vaishnav@gmail.com",
+      "username": "Vaishnav",
+      "password": "123456",
+      "id": "tGPlVwcOYCs"
+    }
+  ],
+  "orders": [
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "manakve"
+      },
+      "items": [
+        {
+          "productId": "17",
+          "name": "Apple Watch Band",
+          "price": 2999,
+          "quantity": 1
+        }
+      ],
+      "total": 2999,
+      "status": "cancelled",
+      "createdAt": "2026-11-13T10:45:32.735Z",
+      "id": "F3Qd_E6gqYI",
+      "cancelledAt": "2026-11-13T12:49:51.131Z"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "6",
+          "name": "20W USB-C Power Adapter",
+          "price": 1699,
+          "quantity": 1
+        },
+        {
+          "productId": "32",
+          "name": "Magnetic Charger for AirPods",
+          "price": 9500,
+          "quantity": 1
+        },
+        {
+          "productId": "15",
+          "name": "Braided USB-C Cable",
+          "price": 1299,
+          "quantity": 1
+        }
+      ],
+      "total": 12498,
+      "status": "cancelled",
+      "createdAt": "2026-11-13T10:47:56.988Z",
+      "id": "Cg1HEmJ4Dxw",
+      "cancelledAt": "2026-11-17T12:52:53.307Z"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "16",
+          "name": "AirTag 4 pack",
+          "price": 1799,
+          "quantity": 1
+        }
+      ],
+      "total": 1799,
+      "status": "cancelled",
+      "createdAt": "2026-11-13T12:28:47.318Z",
+      "id": "ms2JYzFIfBQ",
+      "cancelledAt": "2026-11-17T12:52:48.254Z"
+    },
+    {
+      "userId": "l5Q3lleXUwc",
+      "customer": {
+        "name": "Ahsana Firoz",
+        "email": "ahsana@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "17",
+          "name": "Apple Watch Band",
+          "price": 2999,
+          "quantity": 1
+        },
+        {
+          "productId": "6",
+          "name": "20W USB-C Power Adapter",
+          "price": 1699,
+          "quantity": 1
+        },
+        {
+          "productId": "21",
+          "name": "Magic Keyboard",
+          "price": 17500,
+          "quantity": 1
+        }
+      ],
+      "total": 22198,
+      "status": "cancelled",
+      "createdAt": "2026-11-13T13:38:19.553Z",
+      "id": "TGgjZfm2-cU",
+      "cancelledAt": "2026-11-13T14:07:29.986Z"
+    },
+    {
+      "userId": "l5Q3lleXUwc",
+      "customer": {
+        "name": "Ahsana Firoz",
+        "email": "ahsana@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "17",
+          "name": "Apple Watch Band",
+          "price": 2999,
+          "quantity": 1
+        }
+      ],
+      "total": 2999,
+      "status": "cancelled",
+      "createdAt": "2026-11-13T14:20:31.291Z",
+      "id": "dqSlqzOWXRk",
+      "cancelledAt": "2026-11-13T14:20:40.395Z"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Clear MagSafe Case",
+          "price": 2499,
+          "quantity": 1
+        },
+        {
+          "productId": "2",
+          "name": "Leather iPhone Case",
+          "price": 3499,
+          "quantity": 1
+        }
+      ],
+      "total": 5998,
+      "status": "cancelled",
+      "createdAt": "2026-11-16T08:04:04.020Z",
+      "id": "mvWFGN8PU1s",
+      "cancelledAt": "2026-11-17T12:52:50.469Z"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Leather iPhone Case",
+          "price": 3499,
+          "quantity": 1
+        }
+      ],
+      "total": 3499,
+      "status": "cancelled",
+      "createdAt": "2026-11-16T13:22:35.281Z",
+      "id": "TLWeJbs5DaA",
+      "cancelledAt": "2026-11-16T13:24:10.254Z"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "17",
+          "name": "Apple Watch Band",
+          "price": 2999,
+          "quantity": 1
+        }
+      ],
+      "total": 2999,
+      "status": "cancelled",
+      "createdAt": "2026-11-16T13:25:32.957Z",
+      "id": "yJN8VqgZPSE",
+      "cancelledAt": "2026-11-17T12:52:45.459Z"
+    },
+    {
+      "userId": "tGPlVwcOYCs",
+      "customer": {
+        "name": "Vaishnav",
+        "email": "Vaishnav@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "4",
+          "name": "Silicone Case - Midnight",
+          "price": 1599,
+          "quantity": 1
+        }
+      ],
+      "total": 1599,
+      "status": "cancelled",
+      "createdAt": "2026-11-17T09:31:51.573Z",
+      "id": "MDS_vM7ENBg",
+      "cancelledAt": "2026-11-17T09:32:17.159Z"
+    },
+    {
+      "userId": "tGPlVwcOYCs",
+      "customer": {
+        "name": "Vaishnav",
+        "email": "Vaishnav@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Leather iPhone Case",
+          "price": 3499,
+          "quantity": 1
+        }
+      ],
+      "total": 3499,
+      "status": "cancelled",
+      "createdAt": "2026-11-17T09:32:05.546Z",
+      "id": "6H37aOP4QNM",
+      "cancelledAt": "2026-11-17T09:32:19.070Z"
+    },
+    {
+      "userId": "tGPlVwcOYCs",
+      "customer": {
+        "name": "Vaishnav",
+        "email": "Vaishnav@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "16",
+          "name": "AirTag 4 pack",
+          "price": 1799,
+          "quantity": 1
+        }
+      ],
+      "total": 1799,
+      "status": "placed",
+      "createdAt": "2026-11-17T09:32:28.049Z",
+      "id": "DOrA9tl-10Q"
+    },
+    {
+      "userId": "tGPlVwcOYCs",
+      "customer": {
+        "name": "Vaishnav",
+        "email": "Vaishnav@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "9",
+          "name": "AirPods 5",
+          "price": 12999,
+          "quantity": 1
+        }
+      ],
+      "total": 12999,
+      "status": "placed",
+      "createdAt": "2026-11-17T09:33:15.792Z",
+      "id": "KaWRzrPr75s"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "8",
+          "name": "MagSafe 10000mAh Power Bank",
+          "price": 5999,
+          "quantity": 1
+        }
+      ],
+      "total": 5999,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-17T12:53:06.264Z",
+      "id": "eNXTRiz2Gbc"
+    }
+  ],
+  "carts": [
+    {
+      "userId": "0_9UqkQfmtw",
+      "items": [],
+      "id": "AgCmMFyNEGQ"
+    },
+    {
+      "userId": "l5Q3lleXUwc",
+      "items": [
+        {
+          "product": {
+            "id": "16",
+            "name": "AirTag 4 pack",
+            "device": "AirTag",
+            "accessoryType": "AirTag",
+            "category": "AirTag",
+            "price": 1799,
+            "description": "Track your everyday essentials with ease using Apple AirTag.",
+            "image": "AirTag.png",
+            "stock": 24
+          },
+          "quantity": 1
+        }
+      ],
+      "id": "YvBpNKT6xo8"
+    },
+    {
+      "userId": "guest",
+      "items": [
+        {
+          "product": {
+            "id": "24",
+            "name": "Beats Headphones",
+            "device": "Beats",
+            "accessoryType": "Headphones",
+            "category": "Audio",
+            "price": 22900,
+            "description": "Beats headphones.",
+            "image": "Beats headphones.jpg",
+            "stock": 0
+          },
+          "quantity": 1
+        },
+        {
+          "product": {
+            "id": "4",
+            "name": "Silicone Case - Midnight",
+            "device": "iPhone",
+            "accessoryType": "Cases & Protection",
+            "category": "Cases",
+            "price": 1599,
+            "description": "Soft-touch silicone case in midnight colour.",
+            "image": "/Images/MidNightSilicon.png",
+            "stock": 25
+          },
+          "quantity": 1
+        }
+      ],
+      "id": "xPnIZMAv2jY"
+    },
+    {
+      "userId": "ZGO8V-daGlw",
+      "items": [
+        {
+          "product": {
+            "id": "8",
+            "name": "MagSafe 10000mAh Power Bank",
+            "device": "iPhone",
+            "accessoryType": "MagSafe",
+            "category": "Chargers",
+            "price": 5999,
+            "description": "Portable magnetic wireless power bank.",
+            "image": "PowerBank.png",
+            "stock": 10
+          },
+          "quantity": 1
+        }
+      ],
+      "id": "1g9LhVdB3nU"
+    },
+    {
+      "userId": "tGPlVwcOYCs",
+      "items": [],
+      "id": "lVIvOjrhaLk"
+    }
+  ],
+  "favorites": [
+    {
+      "userId": "l5Q3lleXUwc",
+      "items": [
+        {
+          "id": "16",
+          "name": "AirTag 4 pack",
+          "device": "AirTag",
+          "accessoryType": "AirTag",
+          "category": "AirTag",
+          "price": 1799,
+          "description": "Track your everyday essentials with ease using Apple AirTag.",
+          "image": "AirTag.png",
+          "stock": 24
+        }
+      ],
+      "id": "14IP1B4GOu0"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "items": [],
+      "id": "3nKSl0n2QAQ"
+    },
+    {
+      "userId": "guest",
+      "items": [
+        {
+          "id": "24",
+          "name": "Beats Headphones",
+          "device": "Beats",
+          "accessoryType": "Headphones",
+          "category": "Audio",
+          "price": 22900,
+          "description": "Beats headphones.",
+          "image": "Beats headphones.jpg",
+          "stock": 0
+        }
+      ],
+      "id": "3Jl-h-wojCk"
+    },
+    {
+      "userId": "ZGO8V-daGlw",
+      "items": [
+        {
+          "id": "8",
+          "name": "MagSafe 10000mAh Power Bank",
+          "device": "iPhone",
+          "accessoryType": "MagSafe",
+          "category": "Chargers",
+          "price": 5999,
+          "description": "Portable magnetic wireless power bank.",
+          "image": "PowerBank.png",
+          "stock": 10
+        }
+      ],
+      "id": "W12VVRGAGac"
+    },
+    {
+      "userId": "tGPlVwcOYCs",
+      "items": [],
+      "id": "KtnPc4Wsnhw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

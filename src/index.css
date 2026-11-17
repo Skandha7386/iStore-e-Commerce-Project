@@ -1,0 +1,42 @@
+@import "tailwindcss";   
+
+.order-confetti {
+    position: absolute;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.order-confetti-piece {
+    position: absolute;
+    top: -1rem;
+    left: var(--confetti-left);
+    width: 0.55rem;
+    height: 0.85rem;
+    border-radius: 2px;
+    background: var(--confetti-color);
+    opacity: 0;
+    animation: order-confetti-fall var(--confetti-duration) var(--confetti-delay) ease-out forwards;
+}
+
+@keyframes order-confetti-fall {
+    0% {
+        opacity: 0;
+        transform: rotate(var(--confetti-rotation));
+    }
+
+    8% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: translate3d(var(--confetti-drift), 100vh, 0) rotate(720deg);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .order-confetti-piece {
+        animation: none;
+    }
+}
