@@ -53,13 +53,21 @@ export const loginUser = createAsyncThunk(
 
             if (!loggedInUser) {
                 return rejectWithValue('Invalid username or password.')
+
+              
             }
+              if(loggedInUser.status === "Blocked"){
+                      return rejectWithValue(
+        'Your account has been blocked. Please contact the administrator.'
+    )
+                }
 
             const sessionUser = {
                 id: loggedInUser.id,
                 name: loggedInUser.name,
                 email: loggedInUser.email,
-                username: loggedInUser.username
+                username: loggedInUser.username,
+                status: loggedInUser.status || 'Active'
             }
 
             localStorage.setItem('loggedInUser', JSON.stringify(sessionUser))

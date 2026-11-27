@@ -64,7 +64,7 @@ export default function Wishlist() {
                                 <img src={getImagePath(product.image)} alt={product.name} className="max-h-full max-w-full object-contain mix-blend-multiply" />
                             </Link>
                             <p className="mt-4 text-xs text-gray-500">{product.accessoryType || product.category}</p>
-                            <Link to={`/products/${product.id}`} className="mt-1 text-lg font-semibold text-gray-900 hover:underline">{product.name}</Link>
+                            <Link to={`/pro ducts/${product.id}`} className="mt-1 text-lg font-semibold text-gray-900 hover:underline">{product.name}</Link>
                             <p className="mt-2 font-medium text-gray-800">{formatPrice(product.price)}</p>
                             <div className="mt-5 flex gap-2">
                                 <button type="button" onClick={function() {

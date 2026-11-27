@@ -8,7 +8,7 @@
       "category": "Cases",
       "price": 2499,
       "description": "Transparent protective case with MagSafe compatibility.",
-      "image": "/Images/clearMagSafe.png",
+      "image": "/Images/clearmagSafecase.png",
       "stock": 30
     },
     {
@@ -20,7 +20,7 @@
       "price": 3499,
       "description": "Premium leather-style protective phone case.",
       "image": "/Images/leatherCase.png",
-      "stock": 15
+      "stock": 12
     },
     {
       "id": "3",
@@ -56,18 +56,15 @@
       "stock": 12
     },
     {
-      "id": "6",
       "name": "20W USB-C Power Adapter",
-      "device": "iPhone",
-      "compatibleDevices": [
-        "iPad"
-      ],
-      "accessoryType": "Chargers & Adapters",
       "category": "Chargers",
+      "device": "iPhone",
+      "accessoryType": "Chargers & Adapters",
       "price": 1699,
+      "stock": 36,
       "description": "Compact USB-C power adapter.",
       "image": "Power Adaptor.png",
-      "stock": 36
+      "id": "6"
     },
     {
       "id": "7",
@@ -81,15 +78,15 @@
       "stock": 18
     },
     {
-      "id": "8",
       "name": "MagSafe 10000mAh Power Bank",
+      "category": "Chargers",
       "device": "iPhone",
       "accessoryType": "MagSafe",
-      "category": "Chargers",
       "price": 5999,
+      "stock": 13,
       "description": "Portable magnetic wireless power bank.",
       "image": "PowerBank.png",
-      "stock": 9
+      "id": "8"
     },
     {
       "id": "9",
@@ -100,7 +97,7 @@
       "price": 12999,
       "description": "Wireless earbuds with a compact charging case.",
       "image": "Airpod5.png",
-      "stock": 13
+      "stock": 12
     },
     {
       "id": "10",
@@ -188,7 +185,7 @@
       "price": 2999,
       "description": "Strap accessory for Apple Watch.",
       "image": "Apple Watch.jpg",
-      "stock": 21
+      "stock": 14
     },
     {
       "id": "18",
@@ -221,7 +218,7 @@
       "price": 999,
       "description": "Wireless keyboard with a built-in Touch ID key for Mac.",
       "image": "MagicKeyboard touchID.jpg",
-      "stock": 28
+      "stock": 26
     },
     {
       "id": "21",
@@ -235,92 +232,92 @@
       "stock": 28
     },
     {
-      "id": "22",
       "name": "Beats Headphones 360",
+      "category": "Audio",
       "device": "Beats",
       "accessoryType": "Headphones",
-      "category": "Audio",
       "price": 42900,
+      "stock": 11,
       "description": "Beats over-ear headphones.",
       "image": "Beats headphones 360.jpg",
-      "stock": 0
+      "id": "22"
     },
     {
-      "id": "23",
       "name": "Beats Headphones",
+      "category": "Audio",
       "device": "Beats",
       "accessoryType": "Headphones",
-      "category": "Audio",
       "price": 6900,
+      "stock": 13,
       "description": "Beats headphones.",
       "image": "Beats Headphone.jpg",
-      "stock": 0
+      "id": "23"
     },
     {
-      "id": "24",
       "name": "Beats Headphones",
+      "category": "Audio",
       "device": "Beats",
       "accessoryType": "Headphones",
-      "category": "Audio",
       "price": 22900,
+      "stock": 26,
       "description": "Beats headphones.",
       "image": "Beats headphones.jpg",
-      "stock": 0
+      "id": "24"
     },
     {
-      "id": "25",
       "name": "Magic Keyboard",
+      "category": "Mice&Keyboard",
       "device": "Mac",
       "accessoryType": "Mice & Keyboards",
-      "category": "Mice&Keyboard",
       "price": 11900,
+      "stock": 20,
       "description": "Magic Keyboard for Mac.",
       "image": "Magic Keyboard.jpg",
-      "stock": 0
+      "id": "25"
     },
     {
-      "id": "26",
       "name": "Magic Keyboard with Touch ID",
+      "category": "Mice&Keyboard",
       "device": "Mac",
       "accessoryType": "Mice & Keyboards",
-      "category": "Mice&Keyboard",
       "price": 19500,
+      "stock": 12,
       "description": "Magic Keyboard with Touch ID for Mac.",
       "image": "Magic keyboard  Touch Id.jpg",
-      "stock": 0
+      "id": "26"
     },
     {
-      "id": "27",
       "name": "Mouse",
+      "category": "Mice&Keyboard",
       "device": "Mac",
       "accessoryType": "Mice & Keyboards",
-      "category": "Mice&Keyboard",
       "price": 8900,
+      "stock": 16,
       "description": "Mouse accessory for Mac.",
       "image": "Mouse.jpg",
-      "stock": 0
+      "id": "27"
     },
     {
-      "id": "28",
       "name": "iPad Pro 11-inch Case",
+      "category": "Cases",
       "device": "iPad",
       "accessoryType": "Cases & Protection",
-      "category": "Cases",
       "price": 8500,
+      "stock": 15,
       "description": "Protective case for iPad Pro 11-inch.",
       "image": "Ipad case pro 11.jpg",
-      "stock": 0
+      "id": "28"
     },
     {
-      "id": "29",
       "name": "iPad Pro 13-inch Case",
+      "category": "Cases",
       "device": "iPad",
       "accessoryType": "Cases & Protection",
-      "category": "Cases",
       "price": 10900,
+      "stock": 5,
       "description": "Protective case for iPad Pro 13-inch.",
       "image": "iPad case i pad pro 13.jpg",
-      "stock": 0
+      "id": "29"
     },
     {
       "id": "30",
@@ -334,15 +331,15 @@
       "stock": 0
     },
     {
-      "id": "31",
       "name": "iPad A16 Case",
+      "category": "Cases",
       "device": "iPad",
       "accessoryType": "Cases & Protection",
-      "category": "Cases",
       "price": 8500,
+      "stock": 17,
       "description": "Protective case for iPad A16.",
       "image": "iPad case A16.jpg",
-      "stock": 0
+      "id": "31"
     },
     {
       "id": "32",
@@ -353,7 +350,7 @@
       "price": 9500,
       "description": "Magnetic charging accessory.",
       "image": "Apple Watch Magnetic Fast Charger.jpg",
-      "stock": 16
+      "stock": 15
     },
     {
       "id": "33",
@@ -406,42 +403,43 @@
       "email": "skandharamaswamy@gmail.com",
       "username": "skandha",
       "password": "123456",
-      "id": "0_9UqkQfmtw"
+      "id": "0_9UqkQfmtw",
+      "role": "Customer"
     },
     {
       "name": "Adhil Ahsana",
       "email": "Adhil@gmail.com",
       "username": "Adhil Ahsu",
       "password": "123456",
-      "id": "fHLZ5Ar-kfU"
+      "id": "fHLZ5Ar-kfU",
+      "role": "Customer",
+      "status": "Active"
     },
     {
       "name": "Ashish A Jaison",
       "email": "Ashish@gmail.com",
       "username": "Ashish",
       "password": "123456",
-      "id": "DP23rS_XICA"
+      "id": "DP23rS_XICA",
+      "role": "Customer"
     },
     {
       "name": "Adhil",
       "email": "adhilAhsu@gmail.com",
       "username": "Adhil",
       "password": "123456",
-      "id": "wGgcQv71ydY"
-    },
-    {
-      "name": "Nafid",
-      "email": "Nafid@gmail.com",
-      "username": "Nafid",
-      "password": "123456",
-      "id": "ZGO8V-daGlw"
+      "id": "wGgcQv71ydY",
+      "status": "Blocked",
+      "role": "Customer"
     },
     {
       "name": "Vaishnav",
       "email": "Vaishnav@gmail.com",
       "username": "Vaishnav",
       "password": "123456",
-      "id": "tGPlVwcOYCs"
+      "id": "tGPlVwcOYCs",
+      "role": "Customer",
+      "status": "Active"
     }
   ],
   "orders": [
@@ -462,7 +460,7 @@
         }
       ],
       "total": 2999,
-      "status": "cancelled",
+      "status": "delivered",
       "createdAt": "2026-11-13T10:45:32.735Z",
       "id": "F3Qd_E6gqYI",
       "cancelledAt": "2026-11-13T12:49:51.131Z"
@@ -712,9 +710,27 @@
         }
       ],
       "total": 1799,
-      "status": "placed",
+      "status": "delivered",
       "createdAt": "2026-11-17T09:32:28.049Z",
-      "id": "DOrA9tl-10Q"
+      "id": "DOrA9tl-10Q",
+      "statusHistory": [
+        {
+          "status": "placed",
+          "date": "2026-11-17T09:32:28.049Z"
+        },
+        {
+          "status": "processing",
+          "date": "2026-11-27T12:46:16.971Z"
+        },
+        {
+          "status": "shipped",
+          "date": "2026-11-27T12:46:19.477Z"
+        },
+        {
+          "status": "delivered",
+          "date": "2026-11-27T12:46:21.181Z"
+        }
+      ]
     },
     {
       "userId": "tGPlVwcOYCs",
@@ -733,9 +749,18 @@
         }
       ],
       "total": 12999,
-      "status": "placed",
+      "status": "shipped",
       "createdAt": "2026-11-17T09:33:15.792Z",
-      "id": "KaWRzrPr75s"
+      "id": "KaWRzrPr75s",
+      "statusHistory": [
+        {
+          "status": "processing",
+          "date": "2026-11-17T09:33:15.792Z"
+        },
+        {
+          "status": "shipped"
+        }
+      ]
     },
     {
       "userId": "0_9UqkQfmtw",
@@ -755,9 +780,351 @@
       ],
       "total": 5999,
       "paymentMethod": "cash_on_delivery",
-      "status": "placed",
+      "status": "cancelled",
       "createdAt": "2026-11-17T12:53:06.264Z",
-      "id": "eNXTRiz2Gbc"
+      "id": "eNXTRiz2Gbc",
+      "cancelledAt": "2026-11-18T13:24:29.126Z"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "1",
+          "name": "Clear MagSafe Case",
+          "price": 2499,
+          "quantity": 1
+        }
+      ],
+      "total": 2499,
+      "paymentMethod": "cash_on_delivery",
+      "status": "cancelled",
+      "createdAt": "2026-11-17T17:20:25.950Z",
+      "id": "GEJ8DEYJXXU",
+      "cancelledAt": "2026-11-26T05:02:35.400Z"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "9",
+          "name": "AirPods 5",
+          "price": 12999,
+          "quantity": 1
+        }
+      ],
+      "total": 12999,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-17T17:21:01.160Z",
+      "id": "_Ar7Ek2nCp8"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Leather iPhone Case",
+          "price": 3499,
+          "quantity": 1
+        }
+      ],
+      "total": 3499,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-17T17:25:03.029Z",
+      "id": "a1fuvIcgOKE"
+    },
+    {
+      "userId": null,
+      "customer": {
+        "name": "Nafid",
+        "email": "Nafid@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "8",
+          "name": "MagSafe 10000mAh Power Bank",
+          "price": 5999,
+          "quantity": 1
+        }
+      ],
+      "total": 5999,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-18T06:35:01.644Z",
+      "id": "X-wZaEzZHSI"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "8",
+          "name": "MagSafe 10000mAh Power Bank",
+          "price": 5999,
+          "quantity": 1
+        },
+        {
+          "productId": "17",
+          "name": "Apple Watch Band",
+          "price": 2999,
+          "quantity": 1
+        }
+      ],
+      "total": 8998,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-18T13:24:10.688Z",
+      "id": "GUc6qbV9vAs"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "17",
+          "name": "Apple Watch Band",
+          "price": 2999,
+          "quantity": 5
+        }
+      ],
+      "total": 14995,
+      "paymentMethod": "cash_on_delivery",
+      "status": "processing",
+      "createdAt": "2026-11-18T13:33:39.436Z",
+      "id": "5M8p7FeAmuU",
+      "statusHistory": [
+        {
+          "status": "placed",
+          "date": "2026-11-18T13:33:39.436Z"
+        },
+        {
+          "status": "processing",
+          "date": "2026-11-24T08:58:31.853Z"
+        }
+      ]
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "32",
+          "name": "Magnetic Charger for AirPods",
+          "price": 9500,
+          "quantity": 1
+        }
+      ],
+      "total": 9500,
+      "paymentMethod": "cash_on_delivery",
+      "status": "delivered",
+      "createdAt": "2026-11-23T06:45:32.297Z",
+      "id": "vjs47lduh2Y",
+      "statusHistory": [
+        {
+          "status": "placed",
+          "date": "2026-11-23T06:45:32.297Z"
+        },
+        {
+          "status": "processing",
+          "date": "2026-11-24T06:15:09.287Z"
+        },
+        {
+          "status": "shipped",
+          "date": "2026-11-24T06:15:21.263Z"
+        },
+        {
+          "status": "delivered",
+          "date": "2026-11-24T06:15:38.114Z"
+        }
+      ]
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Leather iPhone Case",
+          "price": 3499,
+          "quantity": 1
+        }
+      ],
+      "total": 3499,
+      "paymentMethod": "cash_on_delivery",
+      "status": "cancelled",
+      "createdAt": "2026-11-26T04:23:48.236Z",
+      "id": "HNMNHnJXmtM",
+      "statusHistory": [
+        {
+          "status": "placed",
+          "date": "2026-11-26T04:23:48.236Z"
+        },
+        {
+          "status": "cancelled",
+          "date": "2026-11-26T04:40:01.471Z"
+        }
+      ]
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "20",
+          "name": "Magic Keyboard",
+          "price": 999,
+          "quantity": 1
+        }
+      ],
+      "total": 999,
+      "paymentMethod": "cash_on_delivery",
+      "status": "cancelled",
+      "createdAt": "2026-11-26T04:38:14.456Z",
+      "id": "TlY4E1zisas",
+      "statusHistory": [
+        {
+          "status": "placed",
+          "date": "2026-11-26T04:38:14.456Z"
+        },
+        {
+          "status": "cancelled",
+          "date": "2026-11-26T04:40:03.272Z"
+        }
+      ]
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "20",
+          "name": "Magic Keyboard",
+          "price": 999,
+          "quantity": 1
+        }
+      ],
+      "total": 999,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-26T04:44:10.936Z",
+      "id": "CTw3V0lUYk0"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "17",
+          "name": "Apple Watch Band",
+          "price": 2999,
+          "quantity": 1
+        }
+      ],
+      "total": 2999,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-26T04:52:09.035Z",
+      "id": "B-LZHxGQFgE"
+    },
+    {
+      "userId": "tGPlVwcOYCs",
+      "customer": {
+        "name": "Vaishnav",
+        "email": "Vaishnav@gmail.com",
+        "phone": "9544187791",
+        "address": "Kozhikode,Mallikadavu"
+      },
+      "items": [
+        {
+          "productId": "8",
+          "name": "MagSafe 10000mAh Power Bank",
+          "price": 5999,
+          "quantity": 1
+        }
+      ],
+      "total": 5999,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-26T05:03:47.239Z",
+      "id": "8cE0A7vSvqE"
+    },
+    {
+      "userId": "0_9UqkQfmtw",
+      "customer": {
+        "name": "skandha",
+        "email": "skandharamaswamy@gmail.com",
+        "phone": "9544187791",
+        "address": "dshsdfsdfsd"
+      },
+      "items": [
+        {
+          "productId": "2",
+          "name": "Leather iPhone Case",
+          "price": 3499,
+          "quantity": 1
+        }
+      ],
+      "total": 3499,
+      "paymentMethod": "cash_on_delivery",
+      "status": "placed",
+      "createdAt": "2026-11-27T12:53:07.377Z",
+      "id": "5XUBN3SjQW0"
     }
   ],
   "carts": [
@@ -788,56 +1155,12 @@
     },
     {
       "userId": "guest",
-      "items": [
-        {
-          "product": {
-            "id": "24",
-            "name": "Beats Headphones",
-            "device": "Beats",
-            "accessoryType": "Headphones",
-            "category": "Audio",
-            "price": 22900,
-            "description": "Beats headphones.",
-            "image": "Beats headphones.jpg",
-            "stock": 0
-          },
-          "quantity": 1
-        },
-        {
-          "product": {
-            "id": "4",
-            "name": "Silicone Case - Midnight",
-            "device": "iPhone",
-            "accessoryType": "Cases & Protection",
-            "category": "Cases",
-            "price": 1599,
-            "description": "Soft-touch silicone case in midnight colour.",
-            "image": "/Images/MidNightSilicon.png",
-            "stock": 25
-          },
-          "quantity": 1
-        }
-      ],
+      "items": [],
       "id": "xPnIZMAv2jY"
     },
     {
-      "userId": "ZGO8V-daGlw",
-      "items": [
-        {
-          "product": {
-            "id": "8",
-            "name": "MagSafe 10000mAh Power Bank",
-            "device": "iPhone",
-            "accessoryType": "MagSafe",
-            "category": "Chargers",
-            "price": 5999,
-            "description": "Portable magnetic wireless power bank.",
-            "image": "PowerBank.png",
-            "stock": 10
-          },
-          "quantity": 1
-        }
-      ],
+      "userId": null,
+      "items": [],
       "id": "1g9LhVdB3nU"
     },
     {
@@ -866,28 +1189,28 @@
     },
     {
       "userId": "0_9UqkQfmtw",
-      "items": [],
+      "items": [
+        {
+          "id": "20",
+          "name": "Magic Keyboard",
+          "device": "Mac",
+          "accessoryType": "Mice & Keyboards",
+          "category": "Mice&Keyboard",
+          "price": 999,
+          "description": "Wireless keyboard with a built-in Touch ID key for Mac.",
+          "image": "MagicKeyboard touchID.jpg",
+          "stock": 28
+        }
+      ],
       "id": "3nKSl0n2QAQ"
     },
     {
       "userId": "guest",
-      "items": [
-        {
-          "id": "24",
-          "name": "Beats Headphones",
-          "device": "Beats",
-          "accessoryType": "Headphones",
-          "category": "Audio",
-          "price": 22900,
-          "description": "Beats headphones.",
-          "image": "Beats headphones.jpg",
-          "stock": 0
-        }
-      ],
+      "items": [],
       "id": "3Jl-h-wojCk"
     },
     {
-      "userId": "ZGO8V-daGlw",
+      "userId": null,
       "items": [
         {
           "id": "8",
@@ -899,6 +1222,17 @@
           "description": "Portable magnetic wireless power bank.",
           "image": "PowerBank.png",
           "stock": 10
+        },
+        {
+          "id": "2",
+          "name": "Leather iPhone Case",
+          "device": "iPhone",
+          "accessoryType": "Cases & Protection",
+          "category": "Cases",
+          "price": 3499,
+          "description": "Premium leather-style protective phone case.",
+          "image": "/Images/leatherCase.png",
+          "stock": 14
         }
       ],
       "id": "W12VVRGAGac"
@@ -907,6 +1241,13 @@
       "userId": "tGPlVwcOYCs",
       "items": [],
       "id": "KtnPc4Wsnhw"
+    }
+  ],
+  "admins": [
+    {
+      "id": "1",
+      "username": "Skandha",
+      "password": "Skandha123"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

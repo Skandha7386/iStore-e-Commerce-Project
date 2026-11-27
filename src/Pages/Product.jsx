@@ -3,6 +3,8 @@ import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { useLocation, useSearchParams, Link } from 'react-router-dom'
 import { fetchProducts } from '../Redux/productSlice'
+import { Heart } from 'lucide-react'
+import { toggleFavorite } from '../Redux/wishListSlice'
 import iPhone from '../assets/iPhone.png'
 import iPad from '../assets/iPad.png'
 import Mac from '../assets/mac.png'
@@ -58,6 +60,10 @@ function Products() {
     const productsPerPage = 6
 
     const dispatch = useDispatch()
+
+    const wishlistItems = useSelector(function(state) {
+    return state.wishlist.items
+})
 
     const { products, isLoading, error } = useSelector(
         function(state) {
@@ -353,32 +359,45 @@ function Products() {
                                 ? item.image
                                 : `/Images/${item.image}`
 
+                                const isWishlisted = wishlistItems.some(function(product) {
+    return String(product.id) === String(item.id)
+})
+
                             return (
 
-                                <div
-                                    key={item.id}
-                                    className="bg-[#f5f5f7] rounded-3xl p-6 flex flex-col transition duration-300 hover:shadow-lg"
-                                >
+                               <div
+    key={item.id}
+    className="bg-white rounded-3xl p-6 flex flex-col transition duration-300 hover:shadow-lg"
+>
 
                                     {/* Product Image */}
 
-                                    <Link to={`/products/${item.id}`}>
+                                   <div className="relative">
+    <Link to={`/products/${item.id}`}>
+        <div className="h-64 flex items-center justify-center">
+            <img
+                src={imagePath}
+                alt={item.name}
+                className="max-h-full object-contain"
+            />
+        </div>
+    </Link>
 
-                                        <div className="h-64 flex items-center justify-center">
-
-                                            <img
-                                                src={imagePath}
-                                                alt={item.name}
-                                                onError={function(event) {
-                                                    event.target.onerror = null
-                                                    event.target.src = "https://placehold.co/400x400?text=Product"
-                                                }}
-                                                className="max-h-full max-w-full object-contain mix-blend-multiply"
-                                            />
-
-                                        </div>
-
-                                    </Link>
+    <button
+        type="button"
+        onClick={function(event) {
+            event.stopPropagation()
+            dispatch(toggleFavorite(item))
+        }}
+        className="absolute top-3 right-3 bg-white rounded-full p-2 shadow hover:scale-110 transition"
+    >
+        <Heart
+            size={22}
+            fill={isWishlisted ? 'red' : 'none'}
+            color={isWishlisted ? 'red' : 'black'}
+        />
+    </button>
+</div>
 
 
                                     {/* Product Information */}

@@ -4,6 +4,17 @@ const ORDERS_API_URL = 'http://localhost:3000/orders'
 const PRODUCTS_API_URL = 'http://localhost:3000/products'
 
 export async function createOrder(orderData) {
+
+    const newOrder={
+        ...orderData,
+        status:'placed',
+        statusHistory:[
+            {
+            status:'placed',
+            date:new Date().toISOString()
+            }
+        ]
+    }
     const response = await axios.post(ORDERS_API_URL, orderData)
     return response.data
 }
@@ -14,6 +25,7 @@ export async function getOrdersForUser(userId) {
 }
 
 export async function cancelOrderAndRestock(orderId) {
+    
     const orderResponse = await axios.get(`${ORDERS_API_URL}/${orderId}`)
     const order = orderResponse.data
 

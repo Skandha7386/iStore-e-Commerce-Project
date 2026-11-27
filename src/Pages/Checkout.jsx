@@ -1,10 +1,12 @@
 import { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { clearCart } from '../Redux/cartSlice'
+import { clearCart ,addToCart} from '../Redux/cartSlice'
 import { submitOrder } from '../Redux/orderSlice'
 import { updateProductStock } from '../Services/productService'
 import { fetchProducts, productStocksUpdated } from '../Redux/productSlice'
+import { Heart } from 'lucide-react'
+import { toggleFavorite } from '../Redux/wishListSlice'
 
 function getSavedCustomer() {
     try {
@@ -24,6 +26,9 @@ function Checkout() {
     const productsLoading = useSelector(function(state) { return state.products.isLoading })
     const productsError = useSelector(function(state) { return state.products.error })
     const isCreatingOrder = useSelector(function(state) { return state.orders.isCreating })
+    const wishlistItems = useSelector(function(state) {
+    return state.wishlist.items
+})  
     const savedCustomer = getSavedCustomer()
     const [customer, setCustomer] = useState({
         name: savedCustomer.name || '',
@@ -42,6 +47,14 @@ function Checkout() {
     const hasUnsetPrice = items.some(function(entry) {
         return !Number.isFinite(entry.product.price)
     })
+
+    const recommendedProducts = products
+    .filter(function(product) {
+        return !items.some(function(entry) {
+            return String(entry.product.id) === String(product.id)
+        })
+    })
+    .slice(0, 4)
 
     useEffect(function() {
         dispatch(fetchProducts())
@@ -140,36 +153,146 @@ function Checkout() {
         }
     }
 
-    if (order) {
-        return (
-            <main className="relative mx-auto min-h-screen max-w-3xl overflow-hidden px-5 py-20 text-center">
-                <div className="order-confetti" aria-hidden="true">
-                    {Array.from({ length: 60 }, function(_, index) {
+   if (order) {
+    return (
+        <main className="relative mx-auto min-h-screen w-full overflow-hidden px-5 py-16">
+
+            {/* Confetti animation */}
+            <div className="order-confetti" aria-hidden="true">
+                {Array.from({ length: 60 }, function(_, index) {
+                    return (
+                        <span
+                            key={index}
+                            className="order-confetti-piece"
+                            style={{
+                                '--confetti-left': `${(index * 37) % 100}%`,
+                                '--confetti-delay': `${(index % 12) * 0.04}s`,
+                                '--confetti-duration': `${2.8 + (index % 5) * 0.2}s`,
+                                '--confetti-drift': `${((index * 17) % 160) - 80}px`,
+                                '--confetti-color': `hsl(${(index * 47) % 360} 90% 60%)`,
+                                '--confetti-rotation': `${index * 53}deg`
+                            }}
+                        />
+                    )
+                })}
+            </div>
+
+            {/* Order confirmation */}
+            <div className="relative z-10 mx-auto max-w-3xl text-center">
+
+                <p className="text-sm font-medium text-green-700">
+                    Order confirmed
+                </p>
+
+                <h1 className="mt-3 text-3xl font-semibold text-gray-900">
+                    Thank you for your order.
+                </h1>
+
+                <p className="mt-3 text-gray-500">
+                    Order number: {order.id}
+                </p>
+
+                <Link
+                    to="/products"
+                    className="mt-7 inline-block rounded-full bg-[#0071e3] px-6 py-3 text-sm font-medium text-white"
+                >
+                    Continue shopping
+                </Link>
+
+            </div>
+
+            {/* Recommended Products */}
+            <section className="relative z-10 mx-auto mt-20 w-full max-w-7xl">
+
+                <h2 className="text-2xl font-semibold text-gray-900">
+                    You May Also Like
+                </h2>
+
+                <p className="mt-2 text-sm text-gray-500">
+                    Discover more products you might love.
+                </p>
+
+                <div className="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+
+                    {recommendedProducts.map(function(product) {
+                        const isInCart = items.some(function(entry) {
+    return String(entry.product.id) === String(product.id)
+})
+                const isWishlisted = wishlistItems.some(function(item) {
+                 return String(item.id) === String(product.id)
+    })
                         return (
-                            <span
-                                key={index}
-                                className="order-confetti-piece"
-                                style={{
-                                    '--confetti-left': `${(index * 37) % 100}%`,
-                                    '--confetti-delay': `${(index % 12) * 0.04}s`,
-                                    '--confetti-duration': `${2.8 + (index % 5) * 0.2}s`,
-                                    '--confetti-drift': `${((index * 17) % 160) - 80}px`,
-                                    '--confetti-color': `hsl(${(index * 47) % 360} 90% 60%)`,
-                                    '--confetti-rotation': `${index * 53}deg`
-                                }}
-                            />
+
+                            <div
+                                key={product.id}
+                                className="rounded-2xl bg-[#f5f5f7] p-5 transition hover:shadow-md"
+                            >
+                                <Link to={`/products/${product.id}`}>
+
+                                  <div className="relative flex h-48 items-center justify-center">
+
+    <img
+        src={product.image.startsWith('/')
+            ? product.image
+            : `/Images/${product.image}`}
+        alt={product.name}
+        className="max-h-full max-w-full object-contain"
+    />
+
+    <button
+        type="button"
+        onClick={function(event) {
+            event.preventDefault()
+            event.stopPropagation()
+            dispatch(toggleFavorite(product))
+        }}
+        className="absolute right-2 top-2 rounded-full bg-white p-2 shadow-md transition hover:scale-110"
+    >
+        <Heart
+            size={21}
+            color={isWishlisted ? 'red' : 'black'}
+            fill={isWishlisted ? 'red' : 'none'}
+        />
+    </button>
+
+</div>
+
+                                    <h3 className="mt-4 font-medium text-gray-900">
+                                        {product.name}
+                                    </h3>
+
+                                </Link>
+
+                                <p className="mt-2 font-semibold text-gray-900">
+                                    ₹{Number(product.price || 0).toLocaleString('en-IN')}
+                                </p>
+
+                              <button
+    type="button"
+    onClick={function() {
+        dispatch(addToCart(product))
+    }}
+    disabled={isInCart || items.length >= 10}
+    className="mt-4 w-full rounded-full bg-[#0071e3] py-2.5 text-sm font-medium text-white transition hover:bg-[#0077ed] disabled:cursor-not-allowed disabled:opacity-50"
+>
+    {isInCart
+        ? 'Already in Cart'
+        : items.length >= 10
+            ? 'Cart Full'
+            : 'Add to Cart'}
+</button>
+
+                            </div>
                         )
                     })}
+
                 </div>
-                <div className="relative z-10">
-                    <p className="text-sm font-medium text-green-700">Order confirmed</p>
-                    <h1 className="mt-3 text-3xl font-semibold text-gray-900">Thank you for your order.</h1>
-                    <p className="mt-3 text-gray-500">Order number: {order.id}</p>
-                    <Link to="/products" className="mt-7 inline-block rounded-full bg-[#0071e3] px-6 py-3 text-sm font-medium text-white">Continue shopping</Link>
-                </div>
-            </main>
-        )
-    }
+
+            </section>
+
+        </main>
+    )
+}
 
     if (items.length === 0) {
         return (
@@ -237,6 +360,7 @@ function Checkout() {
                     <Link to="/cart" className="mt-4 block text-center text-sm text-[#0071e3] hover:underline">Return to bag</Link>
                 </aside>
             </div>
+       
         </main>
     )
 }

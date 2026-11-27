@@ -21,7 +21,9 @@ function MyOrders() {
     const [orderToCancel, setOrderToCancel] = useState(null)
 
     useEffect(function() {
-        dispatch(fetchOrdersForUser(user.id))
+        if (user.id !== null && user.id !== undefined && String(user.id).trim() !== '') {
+            dispatch(fetchOrdersForUser(user.id))
+        }
     }, [dispatch, user.id])
 
     async function handleCancelOrder(order) {
